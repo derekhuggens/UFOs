@@ -1,17 +1,7 @@
 # UFOs
 Javascript Web Development
 
-The written analysis has the following:
-
-There is a description of how to perform a search, with images. (4 pt)
-
-Summary:
-
-The summary addresses one drawback of this webpage (2 pt)
-The summary addresses two additional recommendations for further development (4 pt)
-
 ## Overview of the Project
-<br>
 
 #### The purpose of this project is to showcase an interactive UFO Sightings website.
 
@@ -25,17 +15,13 @@ This project also showcases proper folder directory creation for static document
 
 <br>
 
-### Results
+## Results
 
-<br>
-
-Results: Describe to Dana how someone might use the new webpage by walking her through the process of using the search criteria. Use images of your webpage during the filtering process to support your explanation.
-
-Webpage Use Tutorial:
+### Webpage Use Tutorial:
 
 At the top of the page one can see the navbar titled, `UFO Sightings`, and if you hover over it, you can see (on desktops) that your cursor changes and that you can click on it to refresh the page to the default table layout.
 
-Next, a Bootstrap design `jumbotron` is used to with a background NASA image and the title, `The Truth is out There`.
+Next, a Bootstrap design `jumbotron` is used with a background NASA image and the title, `The Truth Is Out There`.
 
 Below the `jumbotron` class image and title, one can see that a new introduction container is made to hold two sections within columns of appropriate ratios. On the left, the `<h3>` title, `UFO Sightings: Fact or Fancy? Ufologists Weigh In`, and on the right, a `<p>` website introduction paragraph `</p>`
 
@@ -64,7 +50,7 @@ function filterTable() {
 }
 ```
 
-The code above shows the HTML and JS relationship for filtering an interactive table.
+The code above shows the HTML and JS relationship for filtering an interactive table. All you have to do is click or tap in the separate filter forms and type in what you want to filter and see.
 
 <br>
 
@@ -78,18 +64,22 @@ Below you can see multiple examples of the table being filtered using the differ
 
 <br>
 
+Filtered by Date and City
 ![City](https://github.com/derekhuggens/UFOs/blob/be49e6f404e2be5d577165f6fd8f81c11b0abc81/readMeImages/datecity.png)
 
 <br>
 
+Filtered by Date and 2-Letter State Code
 ![State](https://github.com/derekhuggens/UFOs/blob/be49e6f404e2be5d577165f6fd8f81c11b0abc81/readMeImages/datestate.png)
 
 <br>
 
+Filtered by 2-Letter Country Code to see the only 'CA' sightings
 ![Country](https://github.com/derekhuggens/UFOs/blob/be49e6f404e2be5d577165f6fd8f81c11b0abc81/readMeImages/country.png)
 
 <br>
 
+Filtered by Shape to see the 'Circle' sightings
 ![Shape](https://github.com/derekhuggens/UFOs/blob/be49e6f404e2be5d577165f6fd8f81c11b0abc81/readMeImages/circle.png)
 
 <br>
