@@ -63,26 +63,9 @@ function updateFilters() {
   
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
-    if (date) {
-      // Apply 'filter' to the table data to only keep the rows where the 'datetime' value matches the filter value
-      filteredData = filteredData.filter(row => row.datetime === date);
-    };
-    if (city) {
-      // Apply 'filter' to the table data to only keep the rows where the 'datetime' value matches the filter value
-      filteredData = filteredData.filter(row => row.city === city);
-    };
-    if (state) {
-      // Apply 'filter' to the table data to only keep the rows where the 'datetime' value matches the filter value
-      filteredData = filteredData.filter(row => row.state === state);
-    };
-    if (country) {
-      // Apply 'filter' to the table data to only keep the rows where the 'datetime' value matches the filter value
-      filteredData = filteredData.filter(row => row.country === country);
-    };
-    if (shape) {
-      // Apply 'filter' to the table data to only keep the rows where the 'datetime' value matches the filter value
-      filteredData = filteredData.filter(row => row.shape === shape);
-    };
+    Object.entries(filters).forEach(([key, value]) => {
+      filteredData = filteredData.filter(row => row[key] === value);
+    });
   
     // 10. Finally, rebuild the table using the filtered data
     buildTable(filteredData);
