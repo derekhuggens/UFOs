@@ -1,6 +1,8 @@
 # UFOs
 Javascript Web Development
 
+https://derekhuggens.github.io/UFOs/
+
 ## Overview of the Project
 
 #### The purpose of this project is to showcase an interactive UFO Sightings website.
